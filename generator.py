@@ -25,7 +25,6 @@ def generator_numbers(text: str):
 def generator_numbers(text: str):
     pattern = r" \d+\.?\d+ "
     numbers = re.findall(pattern, text)
-    print(numbers)
     for number in numbers:
         yield float(number)
         
